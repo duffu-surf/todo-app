@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Start Node Server",
+            "request": "launch",
+            "type": "node",
+            "program": "${workspaceFolder}/server.js"
+        },
+        {
+            "name": "Open Integrated Browser",
+            "request": "launch",
+            "type": "editor-browser",
+            "url": "http://localhost:3000"
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Launch Todo App",
+            "configurations": ["Start Node Server", "Open Integrated Browser"]
+        }
+    ]
+}
